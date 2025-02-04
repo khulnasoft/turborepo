@@ -1,4 +1,4 @@
-import { execSync } from "child_process";
+import { execFileSync } from "child_process";
 import path from "node:path";
 
 // TODO: make this customizable?
@@ -12,13 +12,13 @@ process.env.NO_UPDATE_NOTIFIER = 1;
 const isWindows = process.platform === "win32";
 
 // Make virtualenv
-execSync(`python3 -m venv ${VENV_NAME}`);
+execFileSync("python3", ["-m", "venv", VENV_NAME]);
 
 // Upgrade pip
-execSync(`${getVenvBin("python3")} -m pip install --quiet --upgrade pip`);
+execFileSync(getVenvBin("python3"), ["-m", "pip", "install", "--quiet", "--upgrade", "pip"]);
 
 // Install prysk
-execSync(`${getVenvBin("pip")} install "prysk==0.15.2"`);
+execFileSync(getVenvBin("pip"), ["install", "prysk==0.15.2"]);
 
 // Which tests do we want to run?
 const testArg = process.argv[3] ? process.argv[3] : process.argv[2];
@@ -34,11 +34,12 @@ const flags = [
   isWindows ? "--dos2unix" : "",
 ].join(" ");
 
-const cmd = [getVenvBin("prysk"), flags, tests].join(" ");
-console.log(`Running ${cmd}`);
+const cmd = getVenvBin("prysk");
+const args = [...flags.split(" "), tests];
+console.log(`Running ${cmd} ${args.join(" ")}`);
 
 try {
-  execSync(cmd, { stdio: "inherit", env: process.env });
+  execFileSync(cmd, args, { stdio: "inherit", env: process.env });
 } catch (e) {
   // Swallow the node error stack trace. stdio: inherit should
   // already have the test failures printed. We don't need the Node.js
