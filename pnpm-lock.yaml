@@ -24,8 +24,8 @@ importers:
         specifier: ^2.8.7
         version: 2.8.7
       semver:
-        specifier: ^7.5.2
-        version: 7.5.2
+        specifier: ^7.7.1
+        version: 7.7.1
       typescript:
         specifier: 5.5.4
         version: 5.5.4
@@ -112,8 +112,8 @@ importers:
         specifier: ^6.2.2
         version: 6.2.2
       semver:
-        specifier: ^7.5.2
-        version: 7.5.2
+        specifier: ^7.7.1
+        version: 7.7.1
       update-check:
         specifier: ^1.5.4
         version: 1.5.4
@@ -149,8 +149,8 @@ importers:
         specifier: ^18.17.2
         version: 18.17.4
       '@types/semver':
-        specifier: ^7.3.9
-        version: 7.3.12
+        specifier: ^7.5.8
+        version: 7.5.8
       jest:
         specifier: ^29.7.0
         version: 29.7.0(@types/node@18.17.4)
@@ -330,8 +330,8 @@ importers:
   packages/turbo-codemod:
     dependencies:
       axios:
-        specifier: 0.28.0
-        version: 0.28.0
+        specifier: 1.7.9
+        version: 1.7.9
       commander:
         specifier: ^9.5.0
         version: 9.5.0
@@ -366,8 +366,8 @@ importers:
         specifier: 1.0.1
         version: 1.0.1
       semver:
-        specifier: ^7.5.2
-        version: 7.5.2
+        specifier: ^7.7.1
+        version: 7.7.1
       update-check:
         specifier: ^1.5.4
         version: 1.5.4
@@ -412,8 +412,8 @@ importers:
         specifier: ^18.17.2
         version: 18.17.4
       '@types/semver':
-        specifier: ^7.3.9
-        version: 7.3.12
+        specifier: ^7.5.8
+        version: 7.5.8
       '@types/uuid':
         specifier: ^9.0.0
         version: 9.0.0
@@ -818,8 +818,8 @@ importers:
         specifier: 1.0.1
         version: 1.0.1
       semver:
-        specifier: 7.5.2
-        version: 7.5.2
+        specifier: 7.7.1
+        version: 7.7.1
       update-check:
         specifier: ^1.5.4
         version: 1.5.4
@@ -3330,10 +3330,6 @@ packages:
     resolution: {integrity: sha512-XISRgDJ2Tc5q4TRqvgJtzsRkFYNJzZrhTdtMoGVBttwzzQJkPnS3WWTFc7kuDRoPtPakl+T+OfdEUjYJj7Jbow==}
     dev: true
 
-  /@types/semver@7.3.12:
-    resolution: {integrity: sha512-WwA1MW0++RfXmCr12xeYOOC5baSC9mSb0ZqCquFzKhcoF4TvHu5MKOuXsncgZcpVFhB1pXd5hZmM0ryAoCp12A==}
-    dev: true
-
   /@types/semver@7.5.8:
     resolution: {integrity: sha512-I8EUhyrgfLrcTkzV3TSsGyl1tSuPrEDzr0yd5m90UgNxQkyDXULk3b6MlQqTCpZpNtWe1K0hzclnZkTcLBe2UQ==}
     dev: true
@@ -3497,7 +3493,7 @@ packages:
       debug: 4.3.4
       globby: 11.1.0
       is-glob: 4.0.3
-      semver: 7.5.2
+      semver: 7.7.1
       tsutils: 3.21.0(typescript@5.5.4)
       typescript: 5.5.4
     transitivePeerDependencies:
@@ -3540,7 +3536,7 @@ packages:
       '@typescript-eslint/typescript-estree': 5.62.0(typescript@5.5.4)
       eslint: 8.57.1
       eslint-scope: 5.1.1
-      semver: 7.5.2
+      semver: 7.7.1
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -3935,8 +3931,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /axios@0.28.0:
-    resolution: {integrity: sha512-Tu7NYoGY4Yoc7I+Npf9HhUMtEEpV7ZiLH9yndTCoNhcpBH0kwcvFbzYN9/u5QKI5A6uefjsNNWaz5olJVYS62Q==}
+  /axios@1.7.9:
+    resolution: {integrity: sha512-LhLcE7Hbiryz8oMDdDptSrWowmB4Bl6RCt6sIJKpRB4XtVf0iEgewX3au/pJqm+Py1kCASkb/FFKjxQaLtxJvw==}
     dependencies:
       follow-redirects: 1.15.9
       form-data: 4.0.1
@@ -4199,7 +4195,7 @@ packages:
   /builtins@5.0.1:
     resolution: {integrity: sha512-qwVpFEHNfhYJIzNRBvd2C1kyo6jz3ZSMPyyuR47OPdiKWlbYnZNyDWuyR175qDnAJLiCo5fBBqPb3RiXgWlkOQ==}
     dependencies:
-      semver: 7.5.2
+      semver: 7.7.1
     dev: false
 
   /bundle-name@3.0.0:
@@ -8856,12 +8852,6 @@ packages:
       yallist: 3.1.1
     dev: true
 
-  /lru-cache@6.0.0:
-    resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
-    engines: {node: '>=10'}
-    dependencies:
-      yallist: 4.0.0
-
   /lru-cache@7.18.3:
     resolution: {integrity: sha512-jumlc0BIUrS3qJGgIkWZsyfAM7NCWiBcCDhnd+3NNM5KbBmLTgHVfWBcg6W+rLUsIpzpERPsvwUP7CckAQSOoA==}
     engines: {node: '>=12'}
@@ -10539,13 +10529,6 @@ packages:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
     hasBin: true
     dev: true
-
-  /semver@7.5.2:
-    resolution: {integrity: sha512-SoftuTROv/cRjCze/scjGyiDtcUyxw1rgYQSZY7XTmtR5hX+dm76iDbTH8TkLPHCQmlbQVSSbNZCPM2hb0knnQ==}
-    engines: {node: '>=10'}
-    hasBin: true
-    dependencies:
-      lru-cache: 6.0.0
 
   /semver@7.7.1:
     resolution: {integrity: sha512-hlq8tAfn0m/61p4BVRcPzIGr6LKiMwo4VM6dGi6pt4qcRkmNzTcWq6eCEjEh+qXjkMDvPlOFFSGwQjoEa6gyMA==}
@@ -12242,7 +12225,7 @@ packages:
     engines: {vscode: ^1.82.0}
     dependencies:
       minimatch: 5.1.0
-      semver: 7.5.2
+      semver: 7.7.1
       vscode-languageserver-protocol: 3.17.5
     dev: false
 
@@ -12424,6 +12407,7 @@ packages:
 
   /yallist@4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
+    dev: true
 
   /yaml@1.10.2:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
